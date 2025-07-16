@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chanell Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">Chanell Design</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-switch-wrapper">
+                <input type="checkbox" id="theme-switch" class="theme-switch" />
+                <label for="theme-switch" class="theme-switch-label" title="Toggle light/dark mode">
+                    <span class="switch-icon"></span>
+                </label>
+            </div>
+        </nav>
+        <div class="hero-content">
+            <h1>Bright Ideas, Brilliant Design</h1>
+            <p>We create stunning, modern websites with glowing neon effects and smooth animations.</p>
+            <a href="#contact" class="cta-btn">Let’s Work Together</a>
+        </div>
+    </header>
+    <main>
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>We are a creative agency specializing in innovative web design. Our team blends art and technology to deliver visually captivating digital experiences.</p>
+        </section>
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <div class="service-list">
+                <div class="service">
+                    <h3>Web Design</h3>
+                    <p>Modern, responsive, and visually engaging websites.</p>
+                </div>
+                <div class="service">
+                    <h3>Brand Identity</h3>
+                    <p>Unique branding with a futuristic touch.</p>
+                </div>
+                <div class="service">
+                    <h3>UI/UX Animation</h3>
+                    <p>Smooth CSS animations and interactive effects.</p>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-list">
+                <div class="portfolio-item">
+                    <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop'); background-size: cover; background-position: center;"></div>
+                    <h4>Modern Landing Page</h4>
+                    <p>Responsive landing page for a tech startup, featuring smooth animations and a clean, professional look.</p>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1558655146-d09347e92766?w=400&h=300&fit=crop'); background-size: cover; background-position: center;"></div>
+                    <h4>Creative Portfolio</h4>
+                    <p>Personal portfolio for a designer, with interactive galleries and elegant transitions.</p>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop'); background-size: cover; background-position: center;"></div>
+                    <h4>Business Dashboard</h4>
+                    <p>Dashboard UI for a business client, including charts, cards, and a modern dark/light mode toggle.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 by Solipago. All rights reserved.</p>
+    </footer>
+    <script>
+      const themeSwitch = document.getElementById('theme-switch');
+      const body = document.body;
+      themeSwitch.addEventListener('change', function() {
+        if (this.checked) {
+          body.classList.add('light-mode');
+        } else {
+          body.classList.remove('light-mode');
+        }
+      });
+    </script>
+</body>
+</html> 
